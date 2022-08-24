@@ -1,0 +1,134 @@
+.news__blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8.5rem;
+    .blocks__long {
+        width: 705px;
+        background: #FFFFFF;
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+        margin-bottom: 3rem;
+        transition: box-shadow 0.2s linear;
+        .blocks__header {
+            position: relative;
+            overflow: hidden;
+            height: 360px;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+        }
+        .news__content {
+            padding: 0 2.4rem 2.4rem 2.4rem;
+            .block__short-title {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-top: 2.4rem;
+                margin-bottom: 1.2rem;
+                color: $gray;
+                transition: color 0.2s linear;
+            }
+            .text__flex {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                color: $text-gray;
+                .industry {
+                    margin-right: 1.2rem;
+                    border-right: 1px solid $text-gray;
+                    padding-right: 1.2rem;
+                    margin-bottom: 2rem;
+                    &:last-child {
+                        border-right: none;
+                        margin-right: 0;
+                        padding-right: 0;
+                    }
+                    img {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            .blocks__text {
+                color: $nav-link;
+                font-size: 1.6rem;
+            }
+        }
+        &:hover {
+            .block__short-title {
+                color: $text-orange;
+            }
+            box-shadow: 0px 80px 80px -20px rgba(69, 69, 70, 0.08),
+            0px 30px 24px -10px rgba(69, 69, 70, 0.05),
+            0px 12px 10px -6px rgba(69, 69, 70, 0.04),
+            0px 4px 4px -4px rgba(69, 69, 70, 0.03);
+        }
+    }
+}
+
+.blocks__short {
+    .block__company {
+        width: 495px;
+        background: #FFFFFF;
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+        margin-bottom: 3rem;
+        transition: box-shadow 0.2s linear;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .short__header {
+            position: relative;
+            overflow: hidden;
+            height: 156px;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+        }
+        .short__content {
+            padding: 0 2.4rem 2.4rem 2.4rem;
+            .short__title {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-top: 2.4rem;
+                margin-bottom: 1.2rem;
+                color: $gray;
+                transition: color 0.2s linear;
+            }
+            .text__display {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                color: $text-gray;
+                .short__text {
+                    margin-right: 1.2rem;
+                    border-right: 1px solid $text-gray;
+                    padding-right: 1.2rem;
+                    &:last-child {
+                        border-right: none;
+                        margin-right: 0;
+                        padding-right: 0;
+                    }
+                    img {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+        &:hover {
+            .short__title {
+                color: $text-orange;
+            }
+            box-shadow: 0px 80px 80px -20px rgba(69, 69, 70, 0.08),
+            0px 30px 24px -10px rgba(69, 69, 70, 0.05),
+            0px 12px 10px -6px rgba(69, 69, 70, 0.04),
+            0px 4px 4px -4px rgba(69, 69, 70, 0.03);
+        }
+    }
+}

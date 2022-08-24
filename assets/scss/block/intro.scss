@@ -1,0 +1,55 @@
+.intro {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 988px;
+    background: #000 url("../images/bg-image.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__title {
+    font-size: 7.2rem;
+    color: $white;
+    font-weight: bold;
+    line-height: 94px;
+    letter-spacing: 1px;
+    margin-bottom: 2.4rem;
+    span {
+        color: $btn-orange;
+    }
+}
+
+.intro__subtitle {
+    width: 595px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 6rem;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 17.9rem;
+    .slider__btn {
+        font-size: 2.8rem;
+        font-weight: bold;
+        opacity: 0.3;
+        &.active {
+            opacity: 1;
+        }
+        .slider__border {
+            display: block;
+            width: 178px;
+            height: 2px;
+            background-color: $white;
+            opacity: 0.3;
+            margin-top: 1.2rem;
+            margin-right: 0.6rem;
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+}

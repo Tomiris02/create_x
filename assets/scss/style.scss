@@ -1,0 +1,57 @@
+@import "vars";
+@import "vendor/reset";
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: white;
+    font-size: 1.4rem;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe\ UI, Roboto, Helvetica\ Neue, Arial, Noto\ Sans, sans-serif;
+    color: $white;
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+
+/* Blocks */
+
+@import "block/container.scss";
+@import "block/header.scss";
+@import "block/img.scss";
+@import "block/btn.scss";
+@import "block/intro.scss";
+@import "block/section.scss";
+@import "block/services.scss";
+@import "block/works.scss";
+@import "block/partner.scss";
+@import "block/news.scss";
+@import "block/blocks.scss";
+@import "block/request.scss";
+@import "block/footer.scss";
+@import "block/wrapper.scss";

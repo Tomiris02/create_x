@@ -1,0 +1,109 @@
+.section {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+
+.section__title {
+    font-size: 4.6rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    &--content {
+        margin-bottom: 3.2rem;
+    }
+    &--partners {
+        text-align: left;
+    }
+    &--news {
+        margin-bottom: 6rem;
+    }
+}
+
+.section__subtitle {
+    font-size: 1.8rem;
+    text-align: center;
+    color: $text-gray;
+    margin-bottom: 6rem;
+}
+
+.section__video {
+    position: relative;
+    margin-bottom: 18rem;
+    .section__img {
+        img {
+            margin: 0 auto;
+            z-index: -2;
+        }
+        &::after {
+            content: "";
+            display: block;
+            width: 1230px;
+            max-width: 100%;
+            height: 100%;
+            background: #1E212C;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .section__logo {
+        .section__play {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .section__off {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #000;
+            opacity: 0.40;
+            position: absolute;
+            left: 18%;
+            bottom: 3%;
+            transform: translate(-18%, -4%);
+            img {
+                margin: 0 auto;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+.section__blocks {
+    display: flex;
+    .section__info {
+        width: 33.3333%;
+        color: black;
+        border-left: 1px solid #DADBDD;
+        &:first-child {
+            border-left: none;
+        }
+        .section__info-img {
+            img {
+                margin: 0 auto;
+                margin-bottom: 2.4rem;
+            }
+        }
+        .section__content {
+            text-align: center;
+            .section__info-name {
+                font-weight: bold;
+                font-size: 2rem;
+                color: $gray;
+                margin-bottom: 0.8rem;
+            }
+            .section__info-text {
+                width: 285px;
+                margin: 0 auto;
+                font-size: 1.6rem;
+                color: $text-gray;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+    .content {
+        background-color: $secondary;
+        padding: 8rem 0;
+    }
+    
+    .partner {
+        position: relative;
+    }
+    
+    .partners__logo {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 18rem;
+    }
+    
+    .partners__comment {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        .persons__comments {
+            width: 50%;
+            max-width: 600px;
+            .partners__content {
+                width: 100%;
+                max-width: 60rem;
+                .partners__person {
+                    img {
+                        border-radius: 50%;
+                        margin-bottom: 2.4rem;
+                    }
+                }
+                .partners__saying {
+                    color: black;
+                    .comment {
+                        color: #424551;
+                        line-height: 2.6rem;
+                        font-size: 1.6rem;
+                        margin-bottom: 2.4rem;
+                    }
+                    .person__name {
+                        color: #1E212C;
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                        margin-bottom: 0.4rem;
+                        font-style: italic;
+                    }
+                    .person__prof {
+                        color: #424551;
+                        line-height: 2.6rem;
+                        font-size: 1.6rem;
+                        font-style: italic;
+                    }
+                    .name {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .partners__img {
+            width: 50%;
+            max-width: 500px;
+            position: absolute;
+            bottom: -20%;
+            right: 0;
+        }
+    }
